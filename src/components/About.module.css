@@ -1,0 +1,39 @@
+.about {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.about button {
+  background-color: #FAEBD7; /* Antique White */
+  color: #333; /* Dark text for contrast */
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 5px 35px;
+  font-size: 16px;
+
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.about button:hover {
+  background-color: #f0e4b0; /* Light golden hue */
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus state */
+.about button:focus {
+  outline: 3px solid #ffbf47; /* Golden outline */
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+    .about {
+        display: block;
+    }
+}
+

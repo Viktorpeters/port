@@ -1,0 +1,58 @@
+.hero {
+  margin-top: 25px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+.anim {
+  width: 35px;
+  height: 80px;
+  border: 2px solid #faebd7;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.para {
+}
+
+.ball {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(60px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    display: block;
+    width: 100%;
+  }
+
+  .image {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .type {
+    width: 100%;
+    font-size: 20px;
+  }
+}
