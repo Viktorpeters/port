@@ -84,7 +84,48 @@ const VerticalEl = () => {
         </div>
         <div className={`${style.remark}`}>
           <h3>Remarks</h3>
-          <p></p>
+          <p>
+            This being my very first internship, I found myself working in a
+            diverse team made up of frontend developers, full-stack engineers,
+            and mobile developers.
+          </p>
+          <p>
+            The company had a very straightforward mantra:{' '}
+            <span style={{ color: '#fbbf24' }}>
+              "Just make the software work 😆"
+            </span>{' '}
+            — and that philosophy reflected in almost everything we did.
+          </p>
+          <p>
+            Instead of diving deep into structured backend systems or advanced
+            server operations, we relied heavily on Firebase to bridge our
+            frontend and mobile applications. It worked — but it wasn’t always
+            pretty.
+          </p>
+          <p>
+            What stood out for me was the hands-on exposure to raw, often
+            improvised methods of solving problems. It was messy, sometimes
+            chaotic, but incredibly eye-opening. I got to see how things were
+            done before the industry evolved into what we know today.
+          </p>
+          <p>
+            That experience gave me a clearer understanding of why modern
+            practices like CI/CD pipelines, proper API design, structured
+            deployments, Dockerization, and team scalability are so important.
+            Knowing the "crude way" gave me context and appreciation for doing
+            things the right way.
+          </p>
+          <p>
+            Eventually, I left the company after a few months. I was mainly on
+            the frontend team, though I wrote a few APIs too — which,
+            unsurprisingly, were eventually replaced by the {' '}
+            <span style={{ color: '#fbbf24' }}>old-school quick fixes 😆.</span>
+          </p>
+          <p>
+            All in all, it was a valuable experience. It grounded me in the
+            roots of software development and helped me understand the evolution
+            and importance of industry standards today.
+          </p>
         </div>
         <a className={`${style.btn}`}>Show me the Api's Documentations</a>
       </div>

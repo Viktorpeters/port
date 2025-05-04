@@ -25,6 +25,28 @@
   animation: heartbeat 1s infinite ease-in-out;
 }
 
+.remark {
+  background: linear-gradient(135deg, #2c235a, #3b2f76);
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #e0eaff;
+  box-shadow: 0 0 20px rgba(91, 67, 191, 0.4);
+  margin-top: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.remark h3 {
+  color: #00ffc3;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.remark p {
+  color: #e0eaff;
+  margin-bottom: 1rem;
+  line-height: 2.3;
+}
+
 @keyframes heartbeat {
   0%,
   100% {
