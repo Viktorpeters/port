@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 import img from '../assets/img.jpg';
 import gmi from '../assets/brack.svg';
 
-const Hero = () => {
+const Hero = ({ onHandleScroll }) => {
   return (
     <div className={`w-[800px]  ${styles.hero} `}>
       <div className={` gap-[25px] flex justify-start items-center   w-full `}>
@@ -15,11 +15,13 @@ const Hero = () => {
         <div
           className={`${styles.para} w-[400px] flex flex-col gap-[20px] sm:w-full`}
         >
-          <p className={`text-[25px] text-[#FAF0E6]  flex ${styles.type} flex items-center gap-[20px]`}>
+          <p
+            className={`text-[25px] text-[#FAF0E6]  flex ${styles.type} flex items-center gap-[20px]`}
+          >
             Hi , i am Viktor{' '}
             <span>
               {' '}
-              <img className='w-[35px]' src={gmi} />{' '}
+              <img className="w-[35px]" src={gmi} />{' '}
             </span>
           </p>
           <Typewriter
@@ -58,7 +60,10 @@ const Hero = () => {
           }}
           src={img}
         />
-        <div className={`${styles.anim} cursor-pointer`}>
+        <div
+          onClick={onHandleScroll}
+          className={`${styles.anim} cursor-pointer`}
+        >
           <div className={`${styles.ball}`}></div>
         </div>
       </div>

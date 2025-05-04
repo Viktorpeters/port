@@ -1,9 +1,10 @@
-import React from 'react';
+/* eslint-disable no-unused-vars */
+import React, { forwardRef } from 'react';
 import styles from './About.module.css';
 import check from '../assets/check.svg';
 import Works from './Works';
 
-const About = () => {
+const About = forwardRef((props, ref) => {
   const techStack = [
     {
       heading: 'Frontend Development',
@@ -41,6 +42,7 @@ const About = () => {
 
   return (
     <div className={`${styles.about} `}>
+      <div ref={ref} />
       <div className="flex-1">
         <p style={{ marginBottom: '20px' }} className="text-[18px]">
           Introduction
@@ -82,6 +84,6 @@ const About = () => {
       </div>
     </div>
   );
-};
+});
 
 export default About;
